@@ -112,7 +112,23 @@ body {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    font-size: 5em;
+    width: 100%;
+    align-items: center;
+}
+
+.background {
+    display: flex;
+    font-size: 2em;
+    width: 100%;
+    border-bottom: 1px solid;
 }
 
 .div-1, .div-2, .div-3 {
@@ -123,7 +139,7 @@ body {
   background-color: #ffffb3;
   height: 300px;
   display: flex;
-  width: 33%;
+  width: 30%;
   justify-content: center;
   align-items: center;
   padding: 0px 20px;
@@ -136,6 +152,24 @@ body {
    
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid;
+    
+}
+
+footer ul {
+    padding-left: 0px;
+}
+
+footer ul li {
+    display: flex;
+    padding: 5px 0px;
+    margin: 0 2px;
+    display: inline;
+    list-style-type: none;
+}
 
 /* ==========================================================================
    Helper classes
